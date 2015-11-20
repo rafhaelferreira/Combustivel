@@ -18,44 +18,102 @@
     <![endif]-->
   </head>
   <body>
-   <div class="container">
+   <div id="fullscreen_bg" class="fullscreen_bg"/>
 
-<div class="row" style="margin-top:20px">
-    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-		<form role="form">
-			<fieldset>
-				<h2>Please Sign In</h2>
-				<hr class="colorgraph">
-				<div class="form-group">
-                    <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address">
-				</div>
-				<div class="form-group">
-                    <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password">
-				</div>
-				<span class="button-checkbox">
-					<button type="button" class="btn" data-color="info">Remember Me</button>
-                    <input type="checkbox" name="remember_me" id="remember_me" checked="checked" class="hidden">
-					<a href="" class="btn btn-link pull-right">Forgot Password?</a>
-				</span>
-				<hr class="colorgraph">
-				<div class="row">
-					<div class="col-xs-6 col-sm-6 col-md-6">
-                        <input type="submit" class="btn btn-lg btn-success btn-block" value="Sign In">
-					</div>
-					<div class="col-xs-6 col-sm-6 col-md-6">
-						<a href="" class="btn btn-lg btn-primary btn-block">Register</a>
-					</div>
-				</div>
-			</fieldset>
-		</form>
-	</div>
-</div>
+<div class="container">
+
+	<form class="form-signin">
+		<h1 class="form-signin-heading text-muted">Calculo de combustivel</h1>
+		<form>
+                  <input type="text" class="form-control" placeholder="Valor Alcool" required="" autofocus="">
+		<input type="text" class="form-control" placeholder="Valor Gasolina" required="">
+		<br><button class="btn btn-lg btn-primary btn-block" type="Calcular">
+			Calcular
+		</button></br>
+		<input type="text" class="form" placeholder="Resultado" >
+	</form>
 
 </div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+<style>   body {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    background-color: #eee;
+  
+  }
+  .btn 
+  {
+   outline:0;
+   border:none;
+   border-top:none;
+   border-bottom:none;
+   border-left:none;
+   border-right:none;
+   box-shadow:inset 2px -3px rgba(0,0,0,0.15);
+  }
+  .btn:focus
+  {
+   outline:0;
+   -webkit-outline:0;
+   -moz-outline:0;
+  }
+  .fullscreen_bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url('http://cleancanvas.herokuapp.com/img/backgrounds/color-splash.jpg');
+    background-repeat:repeat;
+  }
+  .form-signin {
+    max-width: 280px;
+    padding: 15px;
+    margin: 0 auto;
+      margin-top:50px;
+  }
+  .form-signin .form-signin-heading, .form-signin {
+    margin-bottom: 10px;
+  }
+  .form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: none;
+    border-left-style: solid;
+    border-color: #000;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top-style: none;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-color: rgb(0,0,0);
+    border-top:1px solid rgba(0,0,0,0.08);
+  }
+  .form-signin-heading {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+  }
+</style>
   </body>
 </html>
